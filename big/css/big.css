@@ -1,0 +1,115 @@
+/*BIG Website */
+
+html{
+    background-color:#ccc;
+}
+
+main{
+    background-color:#fff;
+    width:80%;
+    margin:auto;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+img {
+    width:100%;
+    border:1px solid #000;
+}
+
+div.gallery {
+    text-align:center;
+}
+
+figure {
+    display:inline-block;
+    margin:.25%;
+}
+
+/* START Embed Responsive Styles */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+ } 
+
+.embed-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+/* END Embed Responsive Styles */
+
+div.embed-container.map {
+    z-index: 1;
+}
+
+/* HIDE AGENDA VIEW CALENDAR for Desktop */
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/*CALENDAR rules for MOBILE */
+@media all and (max-width:1000px){
+    
+    /*Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    
+    /*Hide Month View Calendar */
+    div.embed-container.month-view {
+        display:none;
+    }
+}
+
+/* START Left Column Styles */
+section{
+    float:left;
+    width:65%;
+}
+/* END Left Column Styles */
+
+/* START Right Column Styles */
+aside{
+    float:right;
+    width:34%;
+}
+/* END Right Column Styles */
+
+.fullwidth{
+    width:100;
+}
+
+footer {
+    padding:1em;
+    text-align:center;
+    clear:both;
+}
+
+/*Mobile Styles */
+
+@media all and (max-width:600px){
+    
+    main{
+    width:100%;
+
+    }
+    
+    section{
+    float:none;
+    width:100%;
+    }
+
+    aside{
+    float:none;
+    width:100;
+    }
+    
+}
