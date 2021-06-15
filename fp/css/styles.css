@@ -1,0 +1,276 @@
+/* Global rules */
+
+html {
+    background-image:url(../images/tbird_engine.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+::selection {
+    color: #000; 
+    background: #ff0;
+}
+
+header{
+    background-image:url(../images/redcar_profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: solid black 10px;
+    
+} 
+
+h1 {
+    visibility: hidden;
+    font-weight: normal;
+    margin: auto;
+    background: white;
+    line-height: 2.5em;
+}
+
+div.wrapper {
+    background-color: white;
+    overflow: auto;
+}
+
+p {
+    margin: 1em;
+}
+
+
+h2, h3 {
+    font-family: 'Fugaz One', cursive;
+    font-weight: normal;
+    font-size: 3em;
+    margin-left: 2em;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: black;
+    text-decoration: none;
+}
+
+li{
+    margin: .5em;
+}
+
+.services{
+    font-family:"Roboto", sans-serif;
+    font-size: 1.5em;
+    margin-left: 3em;
+    width: 50%;
+}
+
+.gallery {
+    margin: 2em;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-top: 1em;
+    overflow: hidden;
+    max-width: 100%; 
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
+
+/* START Left Column Styles */
+section{
+    float:left;
+    width:60%;
+    margin-left: 1em;
+}
+/* END Left Column Styles */
+
+/* START Right Column Styles */
+aside{
+    float:right;
+    width:34%;
+    font-weight: normal;
+    font-size: 2em;
+    margin-left: 1em;
+    line-height: 1em;
+    margin-top: 4em;
+}
+/* END Right Column Styles */
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    
+    div.wrapper {
+        width: 81%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    .phonelink {
+        position: relative;
+        bottom: -39px;
+        left: -342px;
+        font-family: 'Bangers', cursive;
+        font-size: 3em;
+        color: #fbf304;
+        text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    }
+    
+    img.logo {
+        width: 30vu;
+        max-width: 30%;
+        height:auto;
+    }    
+    
+    img.home-image {
+        float: right;
+        margin-right: 30px;
+        margin-top: 30px;
+        width: 30%;
+    }
+    
+    
+    p {
+        float: left;
+        width: 50%;
+        margin: 1em 4em 1em 6em;
+    }
+    
+    p.footer-text{
+        width: 90%;
+    }
+}
+
+/* TABLET */
+@media all and (min-width:600px) and (max-width:1199px) {
+    div.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    h2{
+        margin-left: 1em;
+    }
+    
+     section{
+        width: 90%;
+        margin-left: 1em;
+    }
+    
+    aside{
+        float: left;
+        width: 90%;
+        margin-top: 1em;
+    }
+    
+     .phonelink {
+        position: relative;
+        bottom: -39px;
+        left: -180px;
+        font-family: 'Bangers', cursive;
+        font-size: 2em;
+        color: #fbf304;
+        text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    }
+    
+    img.logo {
+        width: 30vu;
+        max-width: 30%;
+        height:auto;
+    }    
+    
+    img.home-image {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:599px) {
+    div.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    h2, h3 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0;
+        line-height: 1em;
+    }
+    
+    section{
+        width: 90%;
+        margin-left: 1em;
+    }
+    
+    aside{
+        float: left;
+        width: 90%;
+        margin-top: 1em;
+    }
+    
+     .phonelink {
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        font-family: 'Bangers', cursive;
+        font-size: 1.5em;
+        color: #fbf304;
+        text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+    }
+    
+    img.logo {
+        width: 70vu;
+        max-width: 70%;
+        height:auto;
+    }    
+    
+    img.home-image {
+        width: 100%;
+    }
+}
